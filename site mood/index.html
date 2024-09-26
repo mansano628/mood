@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Como Você Está Se Sentindo?</title>
+    <link rel="stylesheet" href="styles.css">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Como você está se sentindo?</title>
+    
+        <!-- Link para fontes do Google Fonts -->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Pacifico&display=swap">
+    
+        <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Como Você Está Se Sentindo?</h1>
+
+        <!-- Dropdown para selecionar o sentimento -->
+        <select id="feelingSelect" onchange="showMessageAndImage()">
+            <option value="">Me diz aí</option>
+            <option value="alegre">Alegre</option>
+            <option value="triste">Triste</option>
+            <option value="com saudade">Com Saudade</option>
+            <option value="ansiosa">Ansiosa</option>
+            <option value="concentrada">Concentrada</option>
+            <option value="brincalhona">Brincalhona</option>
+            <option value="brava">Brava</option>
+            <option value="sonolenta">Sonolenta</option>
+            <option value="sacana">Sacana</option>
+        </select>
+
+        <div id="timer" style="font-size: 24px; text-align: center; margin-top: 20px;"></div>
+        <div id="warning" style="font-size: 20px; color: red; text-align: center; margin-top: 20px;"></div>
+        
+        <!-- Div para exibir a mensagem e a imagem -->
+        <div id="response" class="response-container">
+            <p id="message"></p>
+            <img id="image" src="" alt="" style="display: none;">
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
